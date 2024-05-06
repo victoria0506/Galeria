@@ -3,10 +3,11 @@ ol{
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
     list-style-type: none;
-    background-color: rgb(255, 173, 173);
+    background-color: #fc8e9b;
     padding: 10px;
 }
-
-.pin1{
-    width: 10%;
+h2{
+    font-style: italic;
+    text-align: center;
+    margin-top: 5%;
 }

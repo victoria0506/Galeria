@@ -1,27 +1,20 @@
-if (document.getElementById("pin1")) {
-    let van = document.getElementById("van")
-    let btn = document.getElementById("btn")
-    let span = document.getElementsByClassName("cerrar")[0]
-    let body = document.getElementsByTagName("body")[0]
 
-    btn.onclick = function() {
-        van.style.display = "block"
-        body.style.position = "static"
-        body.style.height = "100%"
-        body.style.overflow = "hidden"
-    }
-    span.onclick = function() {
-        van.style.display = "none"
-        body.style.position = "inherit"
-        body.style.height = "auto"
-        body.style.overflow = "visible"
-    }
-    window.onclick = function(event) {
-        if (event.target == van) {
-            van.style.display = "none"
-            body.style.position = "inherit"
-            body.style.height = "auto"
-            body.style.overflow = "visible"
-        }
-    }
+
+
+let correo = document.getElementById("correo")
+let contraseña = document.getElementById("contraseña")
+let nomUsuario = document.getElementById("usuario")
+let btnregistro = document.getElementById("registro")
+
+btnregistro.addEventListener("click", function(){
+   localStorage.setItem("Correo", correo.value)
+   localStorage.setItem("contraseña", contraseña.value)
+   localStorage.setItem("nombreUsuario", nomUsuario.value) 
+})
+
+function llamar() {
+    localStorage.getItem("Correo")
+    localStorage.getItem("contraseña")
+    localStorage.getItem("nombreUsuario")
 }
+

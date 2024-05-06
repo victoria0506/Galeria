@@ -1,0 +1,12 @@
+ol{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    list-style-type: none;
+    background-color: rgb(255, 173, 173);
+    padding: 10px;
+}
+
+.pin1{
+    width: 10%;
+}

@@ -17,6 +17,7 @@ a{
 }
 .login{
     text-align: center;
+    box-sizing: content-box;
 }
 .locss{
     border: 1px gray solid;

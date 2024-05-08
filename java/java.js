@@ -29,15 +29,25 @@ btnregistro.addEventListener("click", function () {
         alert("Llene sus datos")
     }
 })
-btnSesion.addEventListener("", (e) => {
-    e.preventDefault()
-    let users = JSON.parse(localStorage.setItem("valcorreo")) || []
-    let valiuser = users.find(user => user.correo === correo && user.contraseña === contraseña)
-    if (!valiuser) {
-       alert("datos invalidos")
-    }else{
-        
+let datos = []
+btnSesion.addEventListener("DomcotentLoaded", function(){
+    let datos = []
+    function datosExisten(dato) {
+        const existe= datos.find(elemento => elemento === dato)
+        if (!existe) {
+            datosExisten.push(dato)
+            window.location.href= "login.html"
+        } else {
+            console.log("datos no exiten")
+        }
     }
+    
+})
+
+btnSesion.getElementById("sesion").addEventListener("click", function () {
+    const indato = document.getElementById("correo").value
+    datosExisten(indato)
+    
 })
 
 

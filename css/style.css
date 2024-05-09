@@ -35,6 +35,30 @@ input{
     font-family: cursive;
     
 }
+label{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #ffa9d4;
+    border-color: #ffa9d4;
+    outline: none;
+    font-family: cursive;
+    text-align: center;
+}
+
+.file{
+    margin-top: 1rem;  
+}
+input::file-selector-button {
+    font-weight: bold;
+    color: black;
+    padding: 0.5em;
+    border: thin solid #ffa9d4;
+    border-radius: 3px;
+    background-color: #ffa9d4;
+    font-family: cursive;
+    cursor: pointer;
+}
+
 button{
     padding: 5px;
     border-radius: 10px;

@@ -1,10 +1,19 @@
-ol{
+.grup{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
     list-style-type: none;
-    background-color: #fc8e9b;
+    background-color: #abead3;
     padding: 18px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+ol a li{
+    display: block;
+    transition: transform 0.4s ease;
+}
+ol a li:hover{
+    transform: scale(1.2);
 }
 
 a{
@@ -13,22 +22,25 @@ a{
 }
 
 .bien{
-    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     margin-top: 5%;
+    transform: scale();
 }
 input{
     outline: none;
-    border-color: #33ccff;
+    border-color: #ffa9d4;
     border-radius: 10px;
     padding: 5px;
+    font-family: cursive;
     
 }
 button{
     padding: 5px;
     border-radius: 10px;
-    background-color: #fc8e9b;
-    border-color: #fc8e9b;
+    background-color: #ffa9d4;
+    border-color: #ffa9d4;
     outline: none;
+    font-family: cursive;
 }
 

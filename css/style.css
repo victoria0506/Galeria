@@ -67,4 +67,7 @@ button{
     outline: none;
     font-family: cursive;
 }
-
+#preview{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}

@@ -76,28 +76,9 @@ button{
 h2{
     font-style: initial;
 }
-
-.contec-img{
-    position: fixed;
-    height: 100vw;
-    width: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-
+.texto{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
-.contec-img img{
-     z-index: 1;
-}
-  
-.contec-img::after{
-    content: "";
-    height: 100vw;
-    width: 100vh;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.56);
-    z-index: 0;
 
-}
+

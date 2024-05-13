@@ -79,11 +79,28 @@ h2{
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
+dialog{
+   border: 0px;
+   background-color:  #ffc7e3;
+  
+}
+.btndialog{
+    text-align: center;
+}
+body {
+    min-height: 600px;
+}
+
+#alert-dialog::backdrop {
+    background: linear-gradient(#000d, #000a);
+}
 footer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     background-color: #abead3;
     text-align: center;
+    margin-top: 15%;
+    padding:4px;
 }
 .tex{
     font-family: cursive;

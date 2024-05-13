@@ -2,8 +2,8 @@
 let btnSubir = document.getElementById("btnSubir")
 let titulo = document.getElementById("titulo")
 const contenedorImg = document.getElementById("Modal")
-let show = document.querySelector("#tituloImg")
-let show1 = document.querySelector("#tituImg")
+let titu = document.querySelector("#tituloImg")
+let titu1 = document.querySelector("#tituImg")
 
 btnSubir.addEventListener("click", function(){
    
@@ -24,39 +24,38 @@ btnSubir.addEventListener("click", function(){
     reader.addEventListener("load", ()=>{
         
         const image = new Image()
-        image.height = 100
+        image.height = 150
         image.src = reader.result
+
+        imagen(image);
         contenedorImg.appendChild(image)
-        show.innerHTML = titulo.value
+        titu.innerHTML = titulo.value
         //show1.innerHTML = titulo.value
         
     })
     reader.readAsDataURL(archivo);
 })
 
-//const imagenes = document.querySelectorAll("img")
+function imagen(image) {
+    console.log(image.src)
 
-//imagenes.forEach(image => {
-     //image.addEventListener("click", ()=>{
-        //addImage(image.getAttribute("src"), image.getAttribute("alt"))
-        //contenedorImg.classList.toggle()
-    //})
-//})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    contenedorImg.addEventListener("click", function() {
+        let respu =  confirm("Desea abrir imagen")
+        if(respu) {
+         let imagenM = document.getElementById("imagenM");
+         
+         console.log(imagenM)
+         imagenM.src=image.src
+    
+       
+            const alertDialog = document.querySelector("#alert-dialog")
+            console.log(alertDialog)
+            alertDialog.show()
+        }else{
+            
+        }
+       
+    })
+}
 
 

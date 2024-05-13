@@ -2,7 +2,8 @@
 
 const btnregistro = document.querySelector("#registro")
 btnregistro.addEventListener("click", (e) =>{
-
+    
+   //preventDefault() es para prevenir que la paina se recarge
     e.preventDefault()
 
     const correo = document.querySelector("#correo").value

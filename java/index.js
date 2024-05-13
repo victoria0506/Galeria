@@ -1,8 +1,7 @@
 
 let btnSubir = document.getElementById("btnSubir")
 let titulo = document.getElementById("titulo")
-let img = document.getElementById("img")
-const contenedorImg = document.getElementById(" myModal")
+const contenedorImg = document.getElementById("Modal")
 let show = document.querySelector("#tituloImg")
 let show1 = document.querySelector("#tituImg")
 
@@ -35,8 +34,14 @@ btnSubir.addEventListener("click", function(){
     reader.readAsDataURL(archivo);
 })
 
+//const imagenes = document.querySelectorAll("img")
 
-
+//imagenes.forEach(image => {
+     //image.addEventListener("click", ()=>{
+        //addImage(image.getAttribute("src"), image.getAttribute("alt"))
+        //contenedorImg.classList.toggle()
+    //})
+//})
 
 
 

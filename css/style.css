@@ -67,10 +67,9 @@ button{
     outline: none;
     font-family: cursive;
 }
-#contec-img{
+.Modal{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-   
+    grid-template-columns: repeat(4,1fr);
 }
 
 h2{
@@ -80,5 +79,13 @@ h2{
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
-
+footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #abead3;
+    text-align: center;
+}
+.tex{
+    font-family: cursive;
+}
 
